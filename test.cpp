@@ -1,14 +1,17 @@
 #include <iostream>
-using namespace std;
 #include "card.h"
 #include "hand.h"
+#include "deck.h"
+using namespace std;
 
 bool testCompareCards();
 bool testHandValue();
+bool testDeck();
 
 int main(void) {
 	if (testCompareCards()) cout << "Card comparison wrong." << endl;
 	if (testHandValue()) cout << "Hand value wrong." << endl;
+	if (testDeck()) cout << "Deck wrong." << endl;
 
 	cout << "Testing complete." << endl;
 
@@ -56,4 +59,11 @@ bool testHandValue() {
 	delete hand;
 
 	return error;
+}
+
+bool testDeck() {
+	Deck *deck = new Deck();
+	deck->draw();
+	cout << deck->toString() << endl;
+	return false;
 }

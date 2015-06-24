@@ -7,7 +7,7 @@ using namespace std;
 class Card 
 {
 	public:
-	enum Suit
+	enum Suit //DO NOT EVER CHANGE THIS
 	{
 		DIAMOND,
 		CLUB,

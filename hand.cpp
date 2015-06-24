@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 #include "card.h"
 #include "hand.h"
 using namespace std;

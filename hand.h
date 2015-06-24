@@ -9,7 +9,7 @@ using namespace std;
 
 class Hand
 {
-	public:
+public:
 
 	static const int MAX_VALUE = 21;
 

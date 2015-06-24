@@ -12,7 +12,7 @@ TEST = test
 all: clean test
 
 test: test.cpp
-	$(CC) $(CPPFLAGS) test.cpp card.cpp hand.cpp -o test
+	$(CC) $(CPPFLAGS) test.cpp card.cpp hand.cpp deck.cpp -o run/test
 
 clean:
 	$(RM) $(TEST)
